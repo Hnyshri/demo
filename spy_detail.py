@@ -8,7 +8,7 @@ class Spy:
         self.chats = []
         self.current_status_message = None
 
-spy = Spy('Shriyansh',"Mr.",22,1.5)
+spy = Spy('Shriyansh Gupta',"Mr.",22,1.5)
 
 class ChatMessage:
     def __init__(self, message, sent_by_me):
