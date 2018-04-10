@@ -3,6 +3,7 @@ from spy_detail import spy,Spy,ChatMessage
 from steganography.steganography import Steganography #library.class import module
 from datetime import datetime
 import csv
+import getpass
 
 date = datetime.now()
 print date
@@ -11,7 +12,8 @@ print 'Let\'s get started'
 
 def login_page():
     username = raw_input("Enter your username: ")
-    password = raw_input("Enter your password: ")
+    # password = raw_input("Enter your password: ")
+    password=getpass.getpass("Enter your password or password is hiden: ")
     checkpassword(username, password)
 def checkpassword(use, pwd):
     if use == "admin" and pwd == "admin":
